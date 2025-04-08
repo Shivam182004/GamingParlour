@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 20% 4%;
+    --foreground: 240 10% 95%;
+    
+    --card: 240 20% 6%;
+    --card-foreground: 240 10% 95%;
+    
+    --popover: 240 20% 4%;
+    --popover-foreground: 240 10% 95%;
+    
+    --primary: 282 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 240 20% 8%;
+    --secondary-foreground: 240 10% 95%;
+    
+    --muted: 240 20% 12%;
+    --muted-foreground: 240 10% 70%;
+    
+    --accent: 196 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 240 10% 95%;
+    
+    --border: 240 20% 15%;
+    --input: 240 20% 15%;
+    --ring: 282 100% 50%;
+    
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-['Poppins',sans-serif] overflow-x-hidden;
+  }
+  
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
+    border-radius: 5px;
+  }
+  
+  /* Animations */
+  @keyframes float {
+    0% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-15px) rotate(5deg);
+    }
+    100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+  }
+  
+  .floating {
+    animation: float 6s ease-in-out infinite;
+  }
+}
