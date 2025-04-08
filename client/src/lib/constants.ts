@@ -1,5 +1,5 @@
 // WhatsApp number for booking - format should be country code + number without any symbols
-export const WHATSAPP_NUMBER = "1234567890";
+export const WHATSAPP_NUMBER = "919981500801";
 
 // Social media links
 export const SOCIAL_MEDIA = {
@@ -12,9 +12,9 @@ export const SOCIAL_MEDIA = {
 
 // Contact information
 export const CONTACT_INFO = {
-  email: "info@nebulagaming.com",
-  phone: "+1 (555) 123-4567",
-  address: "123 Gaming Street, Tech City, CA 94107"
+  email: "info@gamersden.com",
+  phone: "+91 9981500801",
+  address: "Gamer's Den, Ujjain, MP, India"
 };
 
 // Business hours
